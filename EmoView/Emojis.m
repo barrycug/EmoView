@@ -10,4 +10,25 @@
 
 @implementation Emojis
 
+-(id)init {
+    self = [super init];
+    if(self) {
+        _allEmojis = [[NSArray arrayWithObjects:
+                      @"😄",
+                      @"😊",
+                      @"😃",
+                      @"😉", nil]retain];
+    }
+    return self;
+}
+
+-(NSArray*) allEmojis {
+    return _allEmojis;
+}
+
+-(void)dealloc {
+    [_allEmojis release];
+    [super dealloc];
+}
+
 @end

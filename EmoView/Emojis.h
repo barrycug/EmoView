@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Emojis : NSObject
+@interface Emojis : NSObject {
+    NSArray* _allEmojis;
+}
+
+//return our big list of hard-coded emojis
+-(NSArray*)allEmojis;
 
 @end
