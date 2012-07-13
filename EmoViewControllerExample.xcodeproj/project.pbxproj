@@ -1,0 +1,300 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52E08F7115B01433009E16B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52E08F7015B01433009E16B5 /* UIKit.framework */; };
+		52E08F7315B01433009E16B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52E08F7215B01433009E16B5 /* Foundation.framework */; };
+		52E08F7515B01433009E16B5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52E08F7415B01433009E16B5 /* CoreGraphics.framework */; };
+		52E08F7B15B01433009E16B5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52E08F7915B01433009E16B5 /* InfoPlist.strings */; };
+		52E08F7D15B01433009E16B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E08F7C15B01433009E16B5 /* main.m */; };
+		52E08F8115B01433009E16B5 /* EmoViewControllerExampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E08F8015B01433009E16B5 /* EmoViewControllerExampleAppDelegate.m */; };
+		52E08F8415B01433009E16B5 /* EmoViewControllerExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E08F8315B01433009E16B5 /* EmoViewControllerExampleViewController.m */; };
+		52E08F8715B01433009E16B5 /* EmoViewControllerExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52E08F8515B01433009E16B5 /* EmoViewControllerExampleViewController.xib */; };
+		52E08F9315B031DA009E16B5 /* Emojis.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E08F9215B031DA009E16B5 /* Emojis.m */; };
+		52E08F9615B03201009E16B5 /* EmoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E08F9515B03201009E16B5 /* EmoView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		52E08F6C15B01433009E16B5 /* EmoViewControllerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmoViewControllerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52E08F7015B01433009E16B5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		52E08F7215B01433009E16B5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		52E08F7415B01433009E16B5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		52E08F7815B01433009E16B5 /* EmoViewControllerExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EmoViewControllerExample-Info.plist"; sourceTree = "<group>"; };
+		52E08F7A15B01433009E16B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		52E08F7C15B01433009E16B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		52E08F7E15B01433009E16B5 /* EmoViewControllerExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EmoViewControllerExample-Prefix.pch"; sourceTree = "<group>"; };
+		52E08F7F15B01433009E16B5 /* EmoViewControllerExampleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmoViewControllerExampleAppDelegate.h; sourceTree = "<group>"; };
+		52E08F8015B01433009E16B5 /* EmoViewControllerExampleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmoViewControllerExampleAppDelegate.m; sourceTree = "<group>"; };
+		52E08F8215B01433009E16B5 /* EmoViewControllerExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmoViewControllerExampleViewController.h; sourceTree = "<group>"; };
+		52E08F8315B01433009E16B5 /* EmoViewControllerExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmoViewControllerExampleViewController.m; sourceTree = "<group>"; };
+		52E08F8615B01433009E16B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/EmoViewControllerExampleViewController.xib; sourceTree = "<group>"; };
+		52E08F9115B031DA009E16B5 /* Emojis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Emojis.h; path = EmoView/Emojis.h; sourceTree = "<group>"; };
+		52E08F9215B031DA009E16B5 /* Emojis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Emojis.m; path = EmoView/Emojis.m; sourceTree = "<group>"; };
+		52E08F9415B03201009E16B5 /* EmoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EmoView.h; path = EmoView/EmoView.h; sourceTree = "<group>"; };
+		52E08F9515B03201009E16B5 /* EmoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EmoView.m; path = EmoView/EmoView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52E08F6915B01433009E16B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E08F7115B01433009E16B5 /* UIKit.framework in Frameworks */,
+				52E08F7315B01433009E16B5 /* Foundation.framework in Frameworks */,
+				52E08F7515B01433009E16B5 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52E08F6115B01433009E16B5 = {
+			isa = PBXGroup;
+			children = (
+				52E08F8D15B01744009E16B5 /* EmoViewController */,
+				52E08F7615B01433009E16B5 /* EmoViewControllerExample */,
+				52E08F6F15B01433009E16B5 /* Frameworks */,
+				52E08F6D15B01433009E16B5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52E08F6D15B01433009E16B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52E08F6C15B01433009E16B5 /* EmoViewControllerExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52E08F6F15B01433009E16B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52E08F7015B01433009E16B5 /* UIKit.framework */,
+				52E08F7215B01433009E16B5 /* Foundation.framework */,
+				52E08F7415B01433009E16B5 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52E08F7615B01433009E16B5 /* EmoViewControllerExample */ = {
+			isa = PBXGroup;
+			children = (
+				52E08F7F15B01433009E16B5 /* EmoViewControllerExampleAppDelegate.h */,
+				52E08F8015B01433009E16B5 /* EmoViewControllerExampleAppDelegate.m */,
+				52E08F8215B01433009E16B5 /* EmoViewControllerExampleViewController.h */,
+				52E08F8315B01433009E16B5 /* EmoViewControllerExampleViewController.m */,
+				52E08F8515B01433009E16B5 /* EmoViewControllerExampleViewController.xib */,
+				52E08F7715B01433009E16B5 /* Supporting Files */,
+			);
+			path = EmoViewControllerExample;
+			sourceTree = "<group>";
+		};
+		52E08F7715B01433009E16B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				52E08F7815B01433009E16B5 /* EmoViewControllerExample-Info.plist */,
+				52E08F7915B01433009E16B5 /* InfoPlist.strings */,
+				52E08F7C15B01433009E16B5 /* main.m */,
+				52E08F7E15B01433009E16B5 /* EmoViewControllerExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		52E08F8D15B01744009E16B5 /* EmoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				52E08F9415B03201009E16B5 /* EmoView.h */,
+				52E08F9515B03201009E16B5 /* EmoView.m */,
+				52E08F9115B031DA009E16B5 /* Emojis.h */,
+				52E08F9215B031DA009E16B5 /* Emojis.m */,
+			);
+			name = EmoViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52E08F6B15B01433009E16B5 /* EmoViewControllerExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52E08F8A15B01433009E16B5 /* Build configuration list for PBXNativeTarget "EmoViewControllerExample" */;
+			buildPhases = (
+				52E08F6815B01433009E16B5 /* Sources */,
+				52E08F6915B01433009E16B5 /* Frameworks */,
+				52E08F6A15B01433009E16B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EmoViewControllerExample;
+			productName = EmoViewControllerExample;
+			productReference = 52E08F6C15B01433009E16B5 /* EmoViewControllerExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52E08F6315B01433009E16B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = EmoViewControllerExample;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 52E08F6615B01433009E16B5 /* Build configuration list for PBXProject "EmoViewControllerExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 52E08F6115B01433009E16B5;
+			productRefGroup = 52E08F6D15B01433009E16B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52E08F6B15B01433009E16B5 /* EmoViewControllerExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52E08F6A15B01433009E16B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E08F7B15B01433009E16B5 /* InfoPlist.strings in Resources */,
+				52E08F8715B01433009E16B5 /* EmoViewControllerExampleViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52E08F6815B01433009E16B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E08F7D15B01433009E16B5 /* main.m in Sources */,
+				52E08F8115B01433009E16B5 /* EmoViewControllerExampleAppDelegate.m in Sources */,
+				52E08F8415B01433009E16B5 /* EmoViewControllerExampleViewController.m in Sources */,
+				52E08F9315B031DA009E16B5 /* Emojis.m in Sources */,
+				52E08F9615B03201009E16B5 /* EmoView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		52E08F7915B01433009E16B5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52E08F7A15B01433009E16B5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		52E08F8515B01433009E16B5 /* EmoViewControllerExampleViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52E08F8615B01433009E16B5 /* en */,
+			);
+			name = EmoViewControllerExampleViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52E08F8815B01433009E16B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		52E08F8915B01433009E16B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52E08F8B15B01433009E16B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EmoViewControllerExample/EmoViewControllerExample-Prefix.pch";
+				INFOPLIST_FILE = "EmoViewControllerExample/EmoViewControllerExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		52E08F8C15B01433009E16B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EmoViewControllerExample/EmoViewControllerExample-Prefix.pch";
+				INFOPLIST_FILE = "EmoViewControllerExample/EmoViewControllerExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52E08F6615B01433009E16B5 /* Build configuration list for PBXProject "EmoViewControllerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52E08F8815B01433009E16B5 /* Debug */,
+				52E08F8915B01433009E16B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52E08F8A15B01433009E16B5 /* Build configuration list for PBXNativeTarget "EmoViewControllerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52E08F8B15B01433009E16B5 /* Debug */,
+				52E08F8C15B01433009E16B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52E08F6315B01433009E16B5 /* Project object */;
+}
