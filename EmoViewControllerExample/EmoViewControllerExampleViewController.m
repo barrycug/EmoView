@@ -7,6 +7,7 @@
 //
 
 #import "EmoViewControllerExampleViewController.h"
+#import "EmoView.h"
 
 @interface EmoViewControllerExampleViewController ()
 
@@ -18,6 +19,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    EmoView* view = [[EmoView alloc]initWithFrame:CGRectMake(0, 200, 320, 240)];
+    [self.view addSubview:view];    
 }
 
 - (void)viewDidUnload

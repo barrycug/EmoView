@@ -21,7 +21,6 @@
     }
     return self;
 }
-
 -(NSArray*) allEmojis {
     return _allEmojis;
 }
@@ -30,5 +29,4 @@
     [_allEmojis release];
     [super dealloc];
 }
-
 @end
