@@ -8,6 +8,23 @@
 
 #import <UIKit/UIKit.h>
 
+
+
+@protocol  EmoViewDelegate;
+
+
 @interface EmoView : UIView
+
+@property(retain, nonatomic) UIScrollView *scrollView;
+@property(retain, nonatomic) UIPageControl *pageControl;
+
+@property(retain, nonatomic) id <EmoViewDelegate> delegate;
+
+@end 
+
+
+@protocol EmoViewDelegate
+
+- (void) buttonPress: (NSString *) button;
 
 @end

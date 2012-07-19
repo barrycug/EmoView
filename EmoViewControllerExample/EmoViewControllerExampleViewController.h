@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EmoView.h"
 
 @interface EmoViewControllerExampleViewController : UIViewController
+
+@property(retain, nonatomic) EmoView *evmoview;
+
+@property (nonatomic, retain) IBOutlet UITextView *textView;
 
 - (IBAction)toggleKeyboard:(id)sender;
 

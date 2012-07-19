@@ -9,18 +9,23 @@
 #import "EmoViewControllerExampleViewController.h"
 #import "EmoView.h"
 
-@interface EmoViewControllerExampleViewController ()
+@interface EmoViewControllerExampleViewController() <EmoViewDelegate> {}
 
 @end
 
+
 @implementation EmoViewControllerExampleViewController
+
+@synthesize evmoview = _evmoview;
+@synthesize textView = _textView;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    EmoView* view = [[EmoView alloc]initWithFrame:CGRectMake(0, 200, 320, 240)];
-    [self.view addSubview:view];    
+    _evmoview = [[EmoView alloc]initWithFrame:CGRectMake(0, 300, 320, 160)];
+    _evmoview.delegate = self;
+    //[self.view addSubview:view];
 }
 
 - (void)viewDidUnload
@@ -35,5 +40,21 @@
 }
 
 - (IBAction)toggleKeyboard:(id)sender {
+    
+    [self.view addSubview:_evmoview];
 }
+
+
+//EmoViewDelegate
+- (void) buttonPress:(NSString *)button{
+//- (void) buttonPress:(NSObject *)button{
+    NSLog(@"=========pressed %@", button);
+    NSString *temp = [_textView.text stringByAppendingFormat:@"%@\n",button];
+//    [_textView setText:temp];
+    _textView.text = temp;
+}
+
+
+
+
 @end
